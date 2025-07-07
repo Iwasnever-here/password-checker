@@ -1,44 +1,48 @@
-# Mini Password Strength Checker #
+# ✅ Password Strength Checker
+passwords are a part of everyday life and keeping them secure is extremely important so I created a python password strength checker. 
 
-A colorful, friendly GUI-based password strength checker built with Python's `tkinter` that:
-- Checks for common strength indicators (length, uppercase, numbers, symbols)
-- Verifies if the password has been found in known data breaches using the [Have I Been Pwned API](https://haveibeenpwned.com/API/v3#PwnedPasswords)
-- Offers real-time feedback
+The checker utalises the [HaveIBeenPwned API](https://haveibeenpwned.com/) to check if the entered password has been in any databases. The checker also checks the basics that make up a strong password: length, special character, captial and number and provides a visual feedback via a tkinter GUI.
 
----
+The app also features:
+- A dynamic progress bar that updates based on password strength rating.
 
-## Features ##
+- Live feedback on password - Clear how password could be improved.
 
--  Real-time password evaluation
--  Progress bar with strength levels
--  Feedback with actionable suggestions
--  Toggle to show/hide password input
--  Pwned Passwords API check
--  Styled UI with warm color palette and playful fonts (Kristen ITC, Comic Sans)
+## ✨ Technologies
+Python
 
----
+Tkinter
 
-## Getting Started ##
+hashLib
 
-### Requirements ###
+requests
 
-- Python 3.6+
-- Internet connection (for the pwned password check)
-- Modules used:
-  - `tkinter` (comes with Python)
-  - `hashlib` (standard lib)
-  - `requests`
+## 🚀 Features
 
-### Install Dependencies ###
+- progress bar - keeps the user motivated to make their password stronger
+
+- keeps the password secure using hashing - never passes the full password
+
+- toggle view - hide or view your password, keep it secure 
+
+
+
+## 📍 The Process
+With python being my strongest language, I decided to use it for my first project. After setting up the basic checker, takes input checks length, special characters, number and capitals sends feedback, I decided to add a more advanced feature that I hadn't done before - use an API. I learnt about the haveIbeenpwned API and decided to implement it, and after many attempts and countless errors I got it working. The last issue I faced was, that it wasnt that user friendly - it needed an interface. I decided to go with tkinter to create a simple clear userface which worked out quite well. Even though this was a basic project, I feel I have learnt alot from it - knowledge that will definetly be useful in future projects.
+
+## 🚦 Running the Project
+Clone the repository
 
 If `requests` isn't installed yet:
 
 ```bash
 pip install requests
 ```
+run the code from an editor
 
-### Acknowledgments ###
+## 🎞️ Preview
 
-- [Troy Hunt's Have I Been Pwned](https://haveibeenpwned.com/)
+![password-strength-checker-recording](https://github.com/user-attachments/assets/13d14566-f822-4820-be27-144777a172bb)
+
 
   
